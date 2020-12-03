@@ -28,12 +28,10 @@ def policy_2(input_list):
         character = temp[1]
         if bool(password[int(first) - 1] == character) != bool(password[int(second) - 1] == character):
             counter += 1
-            print(password, first, second, character)
     return counter
 
-if __name__ == "__main__":
-    input_list = get_numbers("input.txt")
-    counter1 = policy_1(input_list)
-    print(counter1)
-    counter2 = policy_2(input_list)
-    print(counter2)
+input_list = get_numbers("input.txt")
+counter1 = policy_1(input_list)
+print(counter1)
+counter2 = policy_2(input_list)
+print(counter2)
