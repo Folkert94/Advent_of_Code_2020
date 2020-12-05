@@ -53,6 +53,8 @@ for seat in data:
     if seat_id > highest_id:
         highest_id = seat_id
 
+    print(highest_id)
+
 for i in range(len(seat_ids)):
     if i not in seat_ids:
         print(i)
