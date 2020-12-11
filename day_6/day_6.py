@@ -8,11 +8,12 @@ data = get_numbers("input.txt")
 data = data.split("\n\n")
 
 count = 0
-# for line in data:
-#     count += len((set(line.replace("\n", ""))))
+for line in data:
+    count += len((set(line.replace("\n", ""))))
 
-# print(count)
+print(count)
 
+count = 0
 for line in data:
     all_items = set(line.replace("\n", ""))
     for item in all_items:
